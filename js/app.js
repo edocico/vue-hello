@@ -5,7 +5,8 @@ const { createApp } = Vue
       return {
         message: 'Hello Vue!',
         title: 'Questo è il titolo della pagina!',
-        titleFlex: ['flex-center', 'title-padding']
+        titleFlex: ['flex-center', 'title-padding'],
+        titleBg: ''
       }
     }
   }).mount('#app')

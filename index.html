@@ -10,10 +10,20 @@
 <body>
     <div id="app">
         <header :class="titleFlex">
-            <h1>{{ title }}</h1>
+            <div :class="titleBg">
+                <h1>{{ title }}</h1>
+            </div>
         </header>
         <main>
-
+            <section>
+                <label for="bg-select">Scegli un colore di sfondo del titolo</label>
+                <select name="colours" id="bg-select" v-model="titleBg">
+                    <option value="">Scegli un colore</option>
+                    <option value="bg-red">Rosso</option>
+                    <option value="bg-blue">Blu</option>
+                    <option value="bg-green">Verde</option>
+                </select>
+            </section>
         </main>
     </div>
 
