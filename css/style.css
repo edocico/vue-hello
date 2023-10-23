@@ -24,3 +24,12 @@
 .bg-green {
     background-color: green;
 }
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}

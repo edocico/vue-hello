@@ -6,7 +6,8 @@ const { createApp } = Vue
         message: '',
         title: 'Questo è il titolo della pagina!',
         titleFlex: ['flex-center', 'title-padding'],
-        titleBg: ''
+        titleBg: '',
+        pageImg: './img/01.webp'
       }
     },
     methods: {
