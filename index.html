@@ -24,6 +24,11 @@
                     <option value="bg-green">Verde</option>
                 </select>
             </section>
+            <section>
+                <input type="text" v-model="message" placeholder="scrivi un messaggio">
+                <button @click="onClick">cancella</button>
+                <p>{{ message }}</p>
+            </section>
         </main>
     </div>
 
