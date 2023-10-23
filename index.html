@@ -26,14 +26,16 @@
             </section>
             <section>
                 <input type="text" v-model="message" placeholder="scrivi un messaggio">
-                <button @click="onClick">cancella</button>
+                <button @click="clearInput">cancella</button>
                 <p>{{ message }}</p>
             </section>
-            <section>
+            <section class="img-section">
                 <div class="container">
-                    <figure>
+                    <figure :class="imgBorder">
                         <img :src="pageImg" alt="">
                     </figure>
+                    <button @click="addShadow">Aggiungi ombra all'immagine</button>
+                    <button @click="removeShadow">Rimuovi l'ombra</button>
                 </div>
             </section>
         </main>
